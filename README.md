@@ -75,7 +75,7 @@ Para ejecutar el proyecto localmente, simplemente abre los archivos HTML en tu n
 
 ## Licencia
 
-Este proyecto está licenciado bajo la [MIT License](LICENSE).
+Este proyecto está licenciado bajo la [License](LICENSE).
 
 ---
 
