@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>fitParking | Reportes</title>
+
+</head>
+<body class="text-[18px] text-white overflow-x-hidden">
+  <!----------------------------------------------------------------------------->
+  <!------------SECCIÓN DE NAVEGACIÓN HORIZONTAL CLIENTE------------------------->
+  <!----------------------------------------------------------------------------->
+
+
+    <nav class="bg-main-black h-full fixed w-60 left-0 flex flex-col items-center justify-between border-r border-r-main-yellow">
+        <div class="flex flex-col gap-4  w-4/5">
+            <img src="../images/logoFitP.png" alt="" class="h-20 m-auto">
+                <ul class="flex flex-col gap-2">
+                    <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1 cursor-pointer hover:text-black hover:font-medium transition duration-500">
+                        <i class="fa-solid fa-house"></i>
+                        <p>Inicio</p>
+                    </li>
+                    <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1 cursor-pointer hover:text-black hover:font-medium transition duration-500">
+                        <i class="fa-solid fa-ticket"></i>
+                        <p>Reservaciones</p>
+                    </li>
+                    <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1 cursor-pointer hover:text-black hover:font-medium transition duration-500">
+                        <i class="fa-solid fa-wallet"></i>
+                        <p>Pagos</p>
+                    </li>
+                    <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1 cursor-pointer hover:text-black hover:font-medium transition duration-500 bg-main-yellow text-main-black font-bold hover:text-white">
+                        <i class="fa-regular fa-user"></i>                        
+                        <p>Reportes</p>
+                    </li>
+                    <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1 cursor-pointer hover:text-black hover:font-medium transition duration-500">
+                        <i class="fa-solid fa-gear"></i>
+                        <p>Ajustes</p>
+                    </li>
+                </ul>
+        </div>
+        <ul class="flex flex-col gap-2 mb-4 w-4/5">
+            <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                <i class="fa-regular fa-circle-question"></i>
+                <p>Ayuda</p>
+            </li>
+            <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                <i class="fa-solid fa-bullhorn"></i>
+                <p>Feedback</p>
+            </li>
+            <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>Cerrar sesión</p>
+            </li>
+        </ul>
+    </nav>
+
+
+  <!----------------------------------------------------------------------------->
+  <!---------------------SECCIÓN DEL PERIODO DEL REPORTE------------------------->
+  <!----------------------------------------------------------------------------->
+
+    <section class="bg-black py-10">
+        <!-- <img src="../images/background.png" alt=""> -->
+            <article class="text-center flex flex-col gap-1 py-2 items-center ">
+               <div class="flex gap-8">
+                    <div class="flex flex-col gap-1 ">
+                        <label for="text">Fecha y hora inicial</label>
+                        <input type="text" placeholder="Lunes 15 de abril de 2024 8:55 am" class="border border-main-yellow py-2 px-3 ">
+                    </div>
+
+                    <div class="flex flex-col gap-1">
+                        <label for="text">Fecha y hora final</label>
+                        <input type="text" placeholder="Lunes 15 de abril de 2024 8:55 am" class="border border-main-yellow py-2 px-3">
+                    </div>
+
+                    <div class="py-2">
+                        <button type="submit" class="border-2 border-main-yellow mt-3 py-2 px-3 cursor-pointer bg-main-yellow hover:bg-transparent bg-transparent hover:cursor-pointer text-main-black font-bold transition duration-200 hover:text-white rounded-xl">Generar reporte</button>
+                    </div>
+                </div>
+            </article>
+
+  <!----------------------------------------------------------------------------->
+  <!---------------------SECCIÓN DEL DETALLADO DEL REPORTE------------------------->
+  <!----------------------------------------------------------------------------->
+
+            <article class="flex flex-col text-center py-10">
+              
+                <h2 class="text-main-yellow text-4xl font-bold">Vehículos ingresados</h2>
+                <div class="items-center flex flex-col gap-6 py-10 ">
+                    <div class="border-main-yellow cursor-pointer py-10 ">
+
+                        <table class="table-auto ">
+                            <thead class="border border-main-yellow text-main-yellow">
+                              <tr>
+                                <th>Nro.</th>
+                                <th>Placa</th>
+                                <th>Tipo</th>
+                                <th>Fecha y hora de ingreso</th>
+                                <th>Estado</th>
+                              </tr>
+                            </thead>
+                            <tbody class="justify-between overflow-y-scroll w-full divide-y ">
+                              <tr class="border border-main-yellow ">
+                                <td class="text-main-yellow font-bold">1</td>
+                                <td>BCD123</td>
+                                <td>Automóvil</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Estacionado</td>
+                              </tr>
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">2</td>
+                                <td>EFG345</td>
+                                <td>Automóvil</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Retirado</td>
+                              </tr>
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">3</td>
+                                <td>BXE13A</td>
+                                <td>Motocicleta</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Estacionado</td>
+                              </tr>
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">4</td>
+                                <td>HIJ678</td>
+                                <td>Automóvil</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Estacionado</td>
+                              </tr>
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">5</td>
+                                <td>BZA15C</td>
+                                <td>Motocicleta</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Retirado</td>
+                              </tr>                           
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">6</td>
+                                <td>KLM019</td>
+                                <td>Automóvil</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Estacionado</td>
+                              </tr>
+                              <tr class="border border-main-yellow        ">
+                                <td class="text-main-yellow font-bold">7</td>
+                                <td>BCD123</td>
+                                <td>Automóvil</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Estacionado</td>
+                              </tr>
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">8</td>
+                                <td>EFG345</td>
+                                <td>Automóvil</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Retirado</td>
+                              </tr>
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">9</td>
+                                <td>BXE13A</td>
+                                <td>Motocicleta</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Estacionado</td>
+                              </tr>
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">10</td>
+                                <td>HIJ678</td>
+                                <td>Automóvil</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Estacionado</td>
+                              </tr>
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">11</td>
+                                <td>BZA15C</td>
+                                <td>Motocicleta</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Retirado</td>
+                              </tr>                           
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">12</td>
+                                <td>KLM019</td>
+                                <td>Automóvil</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Estacionado</td>
+                              </tr>
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">13</td>
+                                <td>BCD123</td>
+                                <td>Automóvil</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Estacionado</td>
+                              </tr>
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">14</td>
+                                <td>EFG345</td>
+                                <td>Automóvil</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Retirado</td>
+                              </tr>
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">15</td>
+                                <td>BXE13A</td>
+                                <td>Motocicleta</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Estacionado</td>
+                              </tr>
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">16</td>
+                                <td>HIJ678</td>
+                                <td>Automóvil</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Estacionado</td>
+                              </tr>
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">17</td>
+                                <td>BZA15C</td>
+                                <td>Motocicleta</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Retirado</td>
+                              </tr>
+                              <tr class="border border-main-yellow">
+                                <td class="text-main-yellow font-bold">18</td>
+                                <td>KLM019</td>
+                                <td>Automóvil</td>
+                                <td>15 de abril de 2024 8:55 am</td>
+                                <td class="font-bold">Estacionado</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                       
+                    </div>
+                    
+                    <div class="border border-main-yellow ">
+                        <h3 class="text-4xl text-main-yellow font-bold">Total</h3>
+                        <p class="text-3xl">18</p>
+
+                    </div>
+                </div>
+                
+
+              
+            </article>
+
+
+  <!----------------------------------------------------------------------------->
+  <!---------------------SECCIÓN PARA GENERAR EL REPORTE------------------------->
+  <!----------------------------------------------------------------------------->
+
+
+            <div class="text-center py-10 px-3">
+                <div class="gap-3 flex justify-end">
+                    <button type="submit" class="border-2 border-main-yellow mt-3 py-2 px-3 cursor-pointer bg-main-yellow hover:bg-transparent bg-transparent hover:cursor-pointer text-main-black font-bold transition duration-200 hover:text-white rounded-xl text-2xl ">Exportar</button>
+                    <i class="fa-regular fa-file-pdf fa-beat fa-2xl" style="color: #f20202;"></i>
+                </div>
+            </div>
+    </section>
+
+
+  <!----------------------------------------------------------------------------->
+  <!------------SECCIÓN DE PIE DE PÁGINA------------------------->
+  <!----------------------------------------------------------------------------->
+    <footer>
+
+    </footer>
+</body>
+</html>
