@@ -9,61 +9,63 @@
 
 </head>
 <body class="text-[18px] text-white overflow-x-hidden">
-  <!----------------------------------------------------------------------------->
-  <!------------SECCIÓN DE NAVEGACIÓN HORIZONTAL CLIENTE------------------------->
+    <!----------------------------------------------------------------------------->
+  <!------------SECCIÓN DE NAVEGACIÓN HORIZONTAL ADMIN------------------------->
   <!----------------------------------------------------------------------------->
 
-
-    <nav class="bg-main-black h-full fixed w-60 left-0 flex flex-col items-center justify-between border-r border-r-main-yellow">
-        <div class="flex flex-col gap-4  w-4/5">
-            <img src="../images/logoFitP.png" alt="" class="h-20 m-auto">
-                <ul class="flex flex-col gap-2">
-                    <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1 cursor-pointer hover:text-black hover:font-medium transition duration-500">
-                        <i class="fa-solid fa-house"></i>
-                        <p>Inicio</p>
-                    </li>
-                    <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1 cursor-pointer hover:text-black hover:font-medium transition duration-500">
-                        <i class="fa-solid fa-ticket"></i>
-                        <p>Reservaciones</p>
-                    </li>
-                    <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1 cursor-pointer hover:text-black hover:font-medium transition duration-500">
-                        <i class="fa-solid fa-wallet"></i>
-                        <p>Pagos</p>
-                    </li>
-                    <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1 cursor-pointer hover:text-black hover:font-medium transition duration-500 bg-main-yellow text-main-black font-bold hover:text-white">
-                        <i class="fa-regular fa-user"></i>                        
-                        <p>Reportes</p>
-                    </li>
-                    <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1 cursor-pointer hover:text-black hover:font-medium transition duration-500">
-                        <i class="fa-solid fa-gear"></i>
-                        <p>Ajustes</p>
-                    </li>
-                </ul>
-        </div>
-        <ul class="flex flex-col gap-2 mb-4 w-4/5">
-            <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
-                <i class="fa-regular fa-circle-question"></i>
-                <p>Ayuda</p>
+  <nav class="bg-main-black h-full fixed left-0 w-60 flex flex-col items-center justify-between border-r border-r-main-yellow">
+    <div class="flex flex-col gap-4 mt-4 w-4/5" >
+        <img src="../images/logoFitP.png" alt="" class="h-20 m-auto">
+        <ul class="flex flex-col gap-2">
+            <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1  cursor-pointer hover:text-black hover:font-medium transition duration-500">
+                <i class="fa-solid fa-house"></i>
+                <p>Inicio</p>
             </li>
-            <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
-                <i class="fa-solid fa-bullhorn"></i>
-                <p>Feedback</p>
+            <li class="flex gap-6 py-1 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                <i class="fa-solid fa-car"></i>
+                <p>Espacios</p>
             </li>
-            <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
-                <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                <p>Cerrar sesión</p>
+            <li class="flex gap-6 py-1 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                <i class="fa-solid fa-ticket"></i>
+                <p>Reservaciones</p>
+            </li>
+            <li class="flex gap-6 py-1 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                <i class="fa-solid fa-wallet"></i>
+                <p>Pagos</p>
+            </li>
+            <li class="flex gap-6 py-1 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                <i class="fa-solid fa-file"></i>
+                <p>Reportes</p>
+            </li>
+            <li class="flex gap-6 py-1 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                <i class="fa-solid fa-gear"></i>
+                <p>Ajustes</p>
             </li>
         </ul>
-    </nav>
-
+    </div>
+    <ul class="flex flex-col gap-2 mb-4 w-4/5">
+        <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+            <i class="fa-regular fa-circle-question"></i>
+            <p>Ayuda</p>
+        </li>
+        <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+            <i class="fa-solid fa-bullhorn"></i>
+            <p>Feedback</p>
+        </li>
+        <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <p>Cerrar sesión</p>
+        </li>
+    </ul>
+</nav>
 
   <!----------------------------------------------------------------------------->
   <!---------------------SECCIÓN DEL PERIODO DEL REPORTE------------------------->
   <!----------------------------------------------------------------------------->
 
-    <section class="bg-black py-10">
+    <section class="bg-general bg-cover bg-center py-10">
         <!-- <img src="../images/background.png" alt=""> -->
-            <article class="text-center flex flex-col gap-1 py-2 items-center ">
+            <article class="flex flex-col gap-1 py-2 items-center ">
                <div class="flex gap-8">
                     <div class="flex flex-col gap-1 ">
                         <label for="text">Fecha y hora inicial</label>
