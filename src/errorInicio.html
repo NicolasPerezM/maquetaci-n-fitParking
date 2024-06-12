@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="esp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>fitParkin | Error</title>
+</head>
+
+<body class="text-[18px] text-white overflow-x-hidden">
+
+  <!----------------------------------------------------------------------------->
+  <!------------SECCIÓN DE NAVEGACIÓN HORIZONTAL CLIENTE------------------------->
+  <!----------------------------------------------------------------------------->
+
+
+  <nav class="bg-main-black h-full fixed w-60 left-0 flex flex-col items-center justify-between border-r border-r-main-yellow">
+    <div class="flex flex-col gap-4  w-4/5">
+        <img src="../images/logoFitP.png" alt="" class="h-20 m-auto">
+            <ul class="flex flex-col gap-2">
+                <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1 cursor-pointer hover:text-black hover:font-medium transition duration-500">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Inicio</p>
+                </li>
+                <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1 cursor-pointer hover:text-black hover:font-medium transition duration-500">
+                    <i class="fa-solid fa-ticket"></i>
+                    <p>Reservaciones</p>
+                </li>
+                <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1 cursor-pointer hover:text-black hover:font-medium transition duration-500">
+                    <i class="fa-solid fa-wallet"></i>
+                    <p>Pagos</p>
+                </li>
+                <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1 cursor-pointer hover:text-black hover:font-medium transition duration-500">
+                    <i class="fa-regular fa-user"></i>                        
+                    <p>Reportes</p>
+                </li>
+                <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1 cursor-pointer hover:text-black hover:font-medium transition duration-500">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Ajustes</p>
+                </li>
+            </ul>
+    </div>
+    <ul class="flex flex-col gap-2 mb-4 w-4/5">
+        <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+            <i class="fa-regular fa-circle-question"></i>
+            <p>Ayuda</p>
+        </li>
+        <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+            <i class="fa-solid fa-bullhorn"></i>
+            <p>Feedback</p>
+        </li>
+        <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <p>Cerrar sesión</p>
+        </li>
+    </ul>
+</nav>
+
+
+
+
+    <!---------------------------------------------------------------->
+    <!-------SECCIÓN SUPERIOR DEL ERROR EN EL INICIO DE SESIÓN-------->
+    <!---------------------------------------------------------------->
+
+
+    
+        <section class="w-screen h-auto border-b-2 bg-main-black border-main-yellow text-[18px] ">
+            <nav class="flex justify-between m-auto w-4/5 py-10">
+            
+                <ul class="flex gap-4 items-center">
+                    <li class="px-3 py-2 text-black border-2 bg-main-yellow border-main-yellow rounded-xl hover:bg-transparent hover:cursor-pointer hover:text-white "><a href="">Inicio</a></li>
+                    <li class="px-3 py-2 text-black border-2 bg-main-yellow border-main-yellow rounded-xl hover:bg-transparent hover:cursor-pointer hover:text-white bg-opacity-80"><a href="">Opción 1</a></li>
+                    <li class="px-3 py-2 text-black border-2 bg-main-yellow border-main-yellow rounded-xl hover:bg-transparent hover:cursor-pointer hover:text-white bg-opacity-80"><a href="">Opción 2</a></li>
+                    <li class="px-3 py-2 text-black border-2 bg-main-yellow border-main-yellow rounded-xl hover:bg-transparent hover:cursor-pointer hover:text-white bg-opacity-80"><a href="">Opción 3</a></li>
+                </ul>
+           
+                <ul class="flex items-center gap-6">
+                    <li class="px-3 py-2 text-black border-2 bg-main-yellow border-main-yellow rounded-xl hover:bg-transparent hover:cursor-pointer hover:text-white font-bold"><a href="">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+
+        </section>
+      
+
+    <!---------------------------------------------------------------->
+    <!------------SECCIÓN DE ERROR EN EL INICIO DE SESIÓN------------->
+    <!---------------------------------------------------------------->
+
+
+        <section class="bg-general bg-cover bg-center h-auto w-screen flex justify-center items-center">
+
+            <article class="container w-[420px] h-auto flex flex-col gap-6 mt-8">
+                        
+                <div class="h-96 rounded-2xl flex flex-col justify-end py-10">                
+                    <div class="mb-12 ml-auto mr-auto flex flex-col gap-4 text-center">
+                        <i class="fa-solid fa-circle-exclamation fa-2xl" style="color: #F2C40D;"></i>
+                        <h2 class="text-main-yellow font-bold text-4xl py-10">ERROR</h2>
+                        <p class="text-white font-semibold">Mensaje del error: "no existe una cuenta asociada a este correo".</p>
+                        <p class="text-white">Por favor intente con un correo electrónico válido ó cree una nueva cuenta.</p>
+                    </div>         
+                </div>
+                <div class="max-w-full flex justify-between py-10">
+                    <button class="border-2 border-main-yellow bg-main-yellow px-3 py-2 rounded-sm text-black hover:cursor-pointer hover:text-white hover:bg-transparent font-bold">Reintentar</button>
+                    <button class="border-2 border-main-yellow bg-main-yellow rounded-sm px-3 py-2 text-black hover:cursor-pointer hover:text-white hover:bg-transparent font-bold">Nueva cuenta</button>
+                </div>
+
+            </article>   
+        </section>
+
+
+      
+</body>
+
+</html>
+
