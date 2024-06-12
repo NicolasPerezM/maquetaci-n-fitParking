@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.gradient-line {
+      background: linear-gradient(to right, rgba(107, 114, 128, 1), rgba(107, 114, 128, 0));
+    }
+    .gradient-line-right {
+      background: linear-gradient(to left, rgba(107, 114, 128, 1), rgba(107, 114, 128, 0));
+    }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>fitParking | Dashboard Cliente</title>
+
+</head>
+<body class="text-[18px] text-white overflow-x-hidden">
+  <!----------------------------------------------------------------------------->
+  <!------------SECCIÓN DE NAVEGACIÓN HORIZONTAL CLIENTE------------------------->
+  <!----------------------------------------------------------------------------->
+
+    <nav class="bg-main-black h-full fixed left-0 w-60 flex flex-col items-center justify-between border-r border-r-main-yellow">
+        <div class="flex flex-col gap-4 mt-4 w-4/5" >
+            <img src="../images/logoFitP.png" alt="" class="h-20 m-auto">
+            <ul class="flex flex-col gap-2">
+                <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1  cursor-pointer hover:text-black hover:font-medium transition duration-500">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Inicio</p>
+                </li>
+                <li class="flex gap-6 py-1 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                    <i class="fa-solid fa-ticket"></i>
+                    <p>Reservaciones</p>
+                </li>
+                <li class="flex gap-6 py-1 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                    <i class="fa-solid fa-wallet"></i>
+                    <p>Pagos</p>
+                </li>
+                <li class="flex gap-6 py-1 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Ajustes</p>
+                </li>
+            </ul>
+        </div>
+        <ul class="flex flex-col gap-2 mb-4 w-4/5">
+            <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                <i class="fa-regular fa-circle-question"></i>
+                <p>Ayuda</p>
+            </li>
+            <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                <i class="fa-solid fa-bullhorn"></i>
+                <p>Feedback</p>
+            </li>
+            <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>Cerrar sesión</p>
+            </li>
+        </ul>
+    </nav>
+
+  <!----------------------------------------------------------------------------->
+  <!------------SECCIÓN DE DASHBOARD DEL CLIENTE------------------------->
+  <!----------------------------------------------------------------------------->
+
+    <section class="bg-general bg-cover bg-center w-screen flex flex-col items-center h-auto">
+        <article class="w-3/5 px-2 py-10 flex flex-col gap-4">
+            <div>
+                <h2 class="text-4xl font-semibold">Bienvenida de vuelta, <span class="text-main-yellow">Lily</span></h2>
+                <p class="italic text-[0.9rem]">Tú Dashboard</p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-2xl font-semibold">Estacionamiento actual</h3>
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid fa-location-dot text-xl"></i>
+                        <div>
+                            <h6 class="font-medium ">Válido hasta las 10:00 pm</h6>
+                            <p class="italic text-[0.9rem] text-gray-400"">Parking Florida, 123 Mission st</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid fa-ticket-simple text-xl"></i>
+                        <p class="text-gray-400"">$15:00</p>
+                        <button class="bg-main-yellow px-2 py-1 rounded-md text-main-black font-semibold border border-main-yellow hover:bg-transparent hover:text-white transition duration-500"">Extender</button>
+                    </div>
+                </div>
+                
+            </div>
+        </article>
+        <article class="flex flex-col gap-4 w-3/5 px-2">
+            <h2 class="text-3xl font-semibold">Subscriptions</h2>
+            <div class="flex gap-6 border border-gray-400 rounded-md">
+                <img src="../images/parking1.jpeg" alt="imagen de parqueadero 1" class="w-80 h-60 rounded-md">
+                <div class="flex flex-col justify-between p-2 w-full">
+                    <div class="flex flex-col gap-1">
+                        <p class="italic text-gray-400">Empieza en 4 días</p>
+                        <h6 class="text-xl font-semibold">Estacionamiento diario</h6>
+                        <p class="italic text-gray-400"">Fecha</p>
+                        <p class="italic text-gray-400"">Expira en 1 día</p>
+                    </div>
+                    <div class="w-full">
+                        <button class="bg-main-yellow w-full rounded-md text-main-black font-semibold border border-main-yellow hover:bg-transparent hover:text-white transition duration-500"">Extender reservación</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-6 border border-gray-400 rounded-md">
+                <img src="../images/parking2.jpeg" alt="imagen de parqueadero 1" class="w-80 h-60 rounded-md">
+                <div class="flex flex-col justify-between p-2 w-full">
+                    <div class="flex flex-col gap-1">
+                        <p class="italic text-gray-400">Empieza en 7 días</p>
+                        <h6 class="text-xl font-semibold">Estacionamiento semnal</h6>
+                        <p class="italic text-gray-400"">Fecha</p>
+                        <p class="italic text-gray-400"">Expira en 15 días</p>
+                    </div>
+                    <div class="w-full">
+                        <button class="bg-main-yellow w-full rounded-md text-main-black font-semibold border border-main-yellow hover:bg-transparent hover:text-white">Extender reservación</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+  <!----------------------------------------------------------------------------->
+  <!------------SECCIÓN DE PIE DE PÁGINA------------------------->
+  <!----------------------------------------------------------------------------->
+    <footer>
+
+    </footer>
+</body>
+</html>

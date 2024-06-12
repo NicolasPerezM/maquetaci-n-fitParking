@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>fitParking | Reservaciones Cliente</title>
+
+</head>
+<body class="text-[18px] text-white overflow-x-hidden">
+  <!----------------------------------------------------------------------------->
+  <!------------SECCIÓN DE NAVEGACIÓN HORIZONTAL CLIENTE------------------------->
+  <!----------------------------------------------------------------------------->
+
+    <nav class="bg-main-black h-full fixed left-0 w-60 flex flex-col items-center justify-between border-r border-r-main-yellow">
+        <div class="flex flex-col gap-4 mt-4 w-4/5" >
+            <img src="../images/logoFitP.png" alt="" class="h-20 m-auto">
+            <ul class="flex flex-col gap-2">
+                <li class="flex gap-6 py-1 items-center hover:bg-main-yellow rounded-md px-1  cursor-pointer hover:text-black hover:font-medium transition duration-500">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Inicio</p>
+                </li>
+                <li class="flex gap-6 py-1 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                    <i class="fa-solid fa-ticket"></i>
+                    <p>Reservaciones</p>
+                </li>
+                <li class="flex gap-6 py-1 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                    <i class="fa-solid fa-wallet"></i>
+                    <p>Pagos</p>
+                </li>
+                <li class="flex gap-6 py-1 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Ajustes</p>
+                </li>
+            </ul>
+        </div>
+        <ul class="flex flex-col gap-2 mb-4 w-4/5">
+            <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                <i class="fa-regular fa-circle-question"></i>
+                <p>Ayuda</p>
+            </li>
+            <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                <i class="fa-solid fa-bullhorn"></i>
+                <p>Feedback</p>
+            </li>
+            <li class="flex gap-6 items-center px-1 rounded-md hover:bg-main-yellow cursor-pointer hover:text-black hover:font-medium transition duration-500"">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>Cerrar sesión</p>
+            </li>
+        </ul>
+    </nav>
+
+  <!----------------------------------------------------------------------------->
+  <!------------SECCIÓN DE RESERVACIONES DEL CLIENTE------------------------->
+  <!----------------------------------------------------------------------------->
+    <section class="bg-general bg-cover bg-center w-screen flex flex-col items-center h-auto">
+        <div class="w-3/5 px-2 py-10 flex flex-col gap-8">
+            <h2 class="text-4xl font-semibold">Reservaciones</h2>
+            <div class="flex flex-col gap-6">
+                <div class="border-b rounded-bl-lg border-main-yellow">
+                    <button class="border px-3 py-1 rounded-bl-md rounded-tl-md hover:bg-main-yellow hover:text-main-black">Actual</button><button class="border px-3 py-1 hover:bg-main-yellow hover:text-main-black">Próximo</button><button class="border px-3 py-1 rounded-br-md rounded-tr-md hover:bg-main-yellow hover:text-main-black">Anterior</button>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex border-b rounded-bl border-gray-400 gap-10">
+                        <img src="../images/parking3.jpeg" alt="imagen de parqueadero 3" class="w-28 rounded-md">
+                        <div class="">
+                            <div class="flex-1 flex flex-col justify-center  h-full">
+                                <h5 class="text-xl font-medium">Estacionamiento diario</h5>
+                                <p class="italic text-gray-400">nov 3, 2024. 8:00 pm</p>
+                            </div>                            
+                        </div>
+                        <p class="self-end place-self-end flex-1 text-right">$20</p>
+                    </div>
+                    <div class="flex border-b rounded-bl border-gray-400 gap-10">
+                        <img src="../images/parking3.jpeg" alt="imagen de parqueadero 3" class="w-28 rounded-md">
+                        <div class="">
+                            <div class="flex-1 flex flex-col justify-center  h-full">
+                                <h5 class="text-xl font-medium">Estacionamiento diario</h5>
+                                <p class="italic text-gray-400">nov 3, 2024. 8:00 pm</p>
+                            </div>                            
+                        </div>
+                        <p class="self-end place-self-end flex-1 text-right">$20</p>
+                    </div>
+                    <div class="flex border-b rounded-bl border-gray-400 gap-10">
+                        <img src="../images/parking3.jpeg" alt="imagen de parqueadero 3" class="w-28 rounded-md">
+                        <div class="">
+                            <div class="flex-1 flex flex-col justify-center  h-full">
+                                <h5 class="text-xl font-medium">Estacionamiento diario</h5>
+                                <p class="italic text-gray-400">nov 3, 2024. 8:00 pm</p>
+                            </div>                            
+                        </div>
+                        <p class="self-end place-self-end flex-1 text-right">$20</p>
+                    </div>
+                    <div class="flex border-b rounded-bl border-gray-400 gap-10">
+                        <img src="../images/parking3.jpeg" alt="imagen de parqueadero 3" class="w-28 rounded-md">
+                        <div class="">
+                            <div class="flex-1 flex flex-col justify-center  h-full">
+                                <h5 class="text-xl font-medium">Estacionamiento diario</h5>
+                                <p class="italic text-gray-400">nov 3, 2024. 8:00 pm</p>
+                            </div>                            
+                        </div>
+                        <p class="self-end place-self-end flex-1 text-right">$20</p>
+                    </div>
+                    <div class="flex border-b rounded-bl border-gray-400 gap-10">
+                        <img src="../images/parking3.jpeg" alt="imagen de parqueadero 3" class="w-28 rounded-md">
+                        <div class="">
+                            <div class="flex-1 flex flex-col justify-center  h-full">
+                                <h5 class="text-xl font-medium">Estacionamiento diario</h5>
+                                <p class="italic text-gray-400">nov 3, 2024. 8:00 pm</p>
+                            </div>                            
+                        </div>
+                        <p class="self-end place-self-end flex-1 text-right">$20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!----------------------------------------------------------------------------->
+  <!------------SECCIÓN DE PIE DE PÁGINA------------------------->
+  <!----------------------------------------------------------------------------->
+    <footer>
+
+    </footer>
+</body>
+</html>
