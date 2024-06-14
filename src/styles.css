@@ -1,0 +1,100 @@
+/* styles.css */
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+}
+
+.new-ticket {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #daa520;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.images img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.summary-box {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #daa520;
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.alert-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #daa520;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #daa520;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+}
+
+table tbody tr {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #555;
+}
+
+table tbody tr:last-child {
+    border-bottom: none;
+}
+
+table tbody tr td {
+    border: none;
+}
+
+.revenue-container {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    border: 2px solid #daa520;
+}
+
+.revenue-container img {
+    border-radius: 8px;
+}
